@@ -82,11 +82,11 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """Returns the area of the rectangle"""
-        return (self.__width * self.__height)
+        """Defines the area of the rectangle"""
+        return (self.__height * self.__width)
 
     def display(self):
-        """Display the rectangle using # """
+        """Displays the rectangle using # """
         for y in range(self.y):
             print("")
         for row in range(self.__height):
@@ -97,7 +97,7 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """Returns the string representation of the rectangle"""
+        """Defines a format for the string representation of the class"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
 {self.__width}/{self.__height}"
 
@@ -109,11 +109,11 @@ class Rectangle(Base):
             for arg in args:
                 if a == 0:
                     if arg is None:
-                        self.__init(self.width, self.height, self.x, self.y)
+                        self.__init__(self.width, self.height, self.x, self.y)
                     else:
                         self.id = arg
                 elif a == 1:
-                    self.width  = arg
+                    self.width = arg
                 elif a == 2:
                     self.height = arg
                 elif a == 3:
@@ -126,7 +126,7 @@ class Rectangle(Base):
             for k, v in kwargs.items():
                 if k == "id":
                     if v is None:
-                        self.__init(self.width, self.height, self.x, self.y)
+                        self.__init__(self.width, self.height, self.x, self.y)
                     else:
                         self.id = v
                 elif k == "width":
