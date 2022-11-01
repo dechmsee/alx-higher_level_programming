@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """Module that contains a class to serve as base for other classes"""
 
-
+import csv
 import json
+import os
+import turtle
+
 
 class Base:
     """Base of all the classes created"""
