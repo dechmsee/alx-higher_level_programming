@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Module that contains a class to serve as base for other classes"""
+"""This module contains a class to serve as base for other classes"""
+
 
 import csv
 import json
@@ -8,7 +9,7 @@ import turtle
 
 
 class Base:
-    """Base of all the classes created"""
+    """Represents base of all classes created """
 
     __nb_objects = 0
 
@@ -17,5 +18,5 @@ class Base:
         if id is not None:
             self.id = id
         else:
-            self.id = Base.__nb_objects
             Base.__nb_objects += 1
+            self.id = Base.__nb_objects
