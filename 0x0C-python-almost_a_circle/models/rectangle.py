@@ -138,7 +138,7 @@ class Rectangle(Base):
                 elif k == "y":
                     self.y = v
 
-def to_dictionary(self):
+    def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle"""
 
         obj_dictionary = {'id': self.id, 'width': self.__width,
